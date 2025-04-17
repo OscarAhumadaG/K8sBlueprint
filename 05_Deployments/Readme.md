@@ -1,6 +1,8 @@
 # Deployments
 
 Let's now use the Deployment template instead of the Pod template.
+## Give you details about the deployments
+    kubectl explain deployment | head -n3
 
 ## Create the Deployment
 

@@ -2,6 +2,10 @@
 
 Let's now use the ReplicaSet template instead of the Pod template.
 
+## Give you details about the replicaset
+
+    kubectl explain replicaset | grep VERSION
+
 ## Create the ReplicaSet
 
     kubectl apply -f rs-example.yaml
@@ -17,6 +21,17 @@ Let's now use the ReplicaSet template instead of the Pod template.
 ## Describe the ReplicaSet
 
     kubectl describe rs rs-example
+
+## Scale a ReplicaSet
+
+    kubectl scale rs new-replica-set --replicas=5
+
+## Edit a ReplicaSet
+
+    kubectl edit replicaset new-replica-set
+
+## Edit a ReplicaSet
+    kubectl edit replicaset new-replica-set
 
 ## Cleanup
 

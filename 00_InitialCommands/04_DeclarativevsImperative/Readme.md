@@ -8,6 +8,9 @@ Let's deploy an Nginx container using both methods.
 
 ## Declarative
 
+    kubectl run redis --image=redis123 --dry-run=client -o yaml > redis-definition.yaml
+    kubectl create -f redis-definition.yaml
+
     kubectl create -f deploy-example.yaml
 
 ## Cleanup
